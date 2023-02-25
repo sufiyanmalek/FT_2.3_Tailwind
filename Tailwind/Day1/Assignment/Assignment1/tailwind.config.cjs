@@ -5,7 +5,12 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    colors: {
+      'first': "#286f6c",
+    },
+    extend: {
+      
+    },
   },
-  plugins: [],
+  plugins: [require("tw-elements/dist/plugin")]
 }

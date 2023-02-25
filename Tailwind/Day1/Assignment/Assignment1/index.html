@@ -1,12 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <script type="module" src="/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body style="background-color: #f8f7f1;">
+  <nav style="background-color: #f8f7f1;"
+    class="md:px-12 fixed top-0 border-b-2 border-first md:border-0 flex w-full flex-nowrap items-center justify-around  py-4 text-neutral-500  hover:text-neutral-700 focus:text-neutral-700 lg:flex-wrap lg:justify-start"
+    data-te-navbar-ref>
+    <div class="flex w-full flex-wrap items-center justify-between px-6">
+      <a class="" href="#"><img class="w-40" src="./public/signature.png" alt=""></a>
+      <button style="background-color: white; border-radius: 50%;"
+        class="block border-0 bg-transparent py-2 px-2.5 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 lg:hidden"
+        type="button" data-te-collapse-init data-te-target="#navbarSupportedContent3"
+        aria-controls="navbarSupportedContent3" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="[&>svg]:w-7">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path d="M5 7H19" stroke="#286f6c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M5 12L19 12" stroke="#286f6c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              </path>
+              <path d="M5 17L19 17" stroke="#286f6c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              </path>
+            </g>
+          </svg>
+        </span>
+      </button>
+      <div class="!visible w-fit hidden justify-between basis-[100%] items-center lg:!flex lg:basis-auto"
+        id="navbarSupportedContent3" data-te-collapse-item>
+
+        <ul class="list-style-none mr-auto flex flex-col pl-0 lg:flex-row" data-te-navbar-nav-ref>
+          <li class="lg:px-2" data-te-nav-item-ref>
+            <a class="nav-links" aria-current="page" href="#" data-te-nav-link-ref>About</a>
+          </li>
+          <li class="lg:pr-2" data-te-nav-item-ref>
+            <a class="nav-links" href="#career" data-te-nav-link-ref>Career</a>
+          </li>
+          <li class="lg:pr-2" data-te-nav-item-ref>
+            <a class="nav-links" href="#review" data-te-nav-link-ref>Review</a>
+          </li>
+          <li class="lg:pr-2" data-te-nav-item-ref>
+            <a class="nav-links" href="#contact" data-te-nav-link-ref>Contact</a>
+          </li>
+
+        </ul>
+
+      </div>
+      <div class="lg:flex items-center hidden ">
+        <div>
+          <a href="" class="nav-links contact">+001 (313) 345 678 </a>
+          <svg class="w-11 inline  p-3 nav-links" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path opacity="0.1"
+                d="M3 6.5C3 14.5081 9.49187 21 17.5 21C18.166 21 18.8216 20.9551 19.4637 20.8682C20.3747 20.7448 21 19.9292 21 19.01V16.4415C21 15.5807 20.4491 14.8164 19.6325 14.5442L16.4841 13.4947C15.6836 13.2279 14.8252 13.699 14.6206 14.5177C14.3475 15.6102 12.987 15.987 12.1907 15.1907L8.80926 11.8093C8.01301 11.013 8.38984 9.65254 9.48229 9.37943C10.301 9.17476 10.7721 8.31644 10.5053 7.51586L9.45585 4.36754C9.18362 3.55086 8.41934 3 7.55848 3H4.99004C4.0708 3 3.25518 3.62533 3.13185 4.53627C3.0449 5.17845 3 5.83398 3 6.5Z"
+                fill="#286f6c"></path>
+              <path
+                d="M3 6.5C3 14.5081 9.49187 21 17.5 21C18.166 21 18.8216 20.9551 19.4637 20.8682C20.3747 20.7448 21 19.9292 21 19.01V16.4415C21 15.5807 20.4491 14.8164 19.6325 14.5442L16.4841 13.4947C15.6836 13.2279 14.8252 13.699 14.6206 14.5177C14.3475 15.6102 12.987 15.987 12.1907 15.1907L8.80926 11.8093C8.01301 11.013 8.38984 9.65254 9.48229 9.37943C10.301 9.17476 10.7721 8.31644 10.5053 7.51586L9.45585 4.36754C9.18362 3.55086 8.41934 3 7.55848 3H4.99004C4.0708 3 3.25518 3.62533 3.13185 4.53627C3.0449 5.17845 3 5.83398 3 6.5Z"
+                stroke="#286f6c" stroke-width="2" stroke-linejoin="round"></path>
+              <path d="M15 9L20.5 3.5" stroke="#286f6c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              </path>
+              <path d="M21 7L21 3.5V3.5C21 3.22386 20.7761 3 20.5 3V3L17 3" stroke="#286f6c" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+          </svg>
+
+        </div>
+      </div>
+
+    </div>
+  </nav>
+  <div class=" container  grid grid-cols-1 md:grid-cols-2  w-5/6 mx-auto pt-28 mt-28">
+    <div class="">
+      <img src="./public/profile.png" alt="" class=" rounded-xl">
+    </div>
+    <div class="xl:pt-20 pt-10 md:pt-0 ">
+      <h1 class="text-7xl font-semibold text-first ">Hi there!</h1>
+      <p class="text-2xl leading-10">Fuelled by a passion for designing compelling products, I have a deep desire to
+        excel and continuously improve in my work. Learn more about my journey below.</p>
+    </div>
+  </div>
+  <div id="career"></div>
+  <div class="container grid grid-cols-1 md:grid-cols-2   w-5/6 mx-auto  mt-56 ">
+    <div class=" lg:mx-10 xl:mx-0">
+      <h1 class="text-5xl font-medium text-first ">My Career So Far</h1>
+      <p class="mt-7 text-2xl leading-9 font-medium">Always up for a challenge, I have worked for lean start-ups and was
+        a member of the first New Zealand start-up to attend Y Combinator, the largest start-up accelerator in the
+        world. From there,  I worked my way up to Art Director and Team Lead at Appster where I oversaw the design of 30+
+        mobile and desktop apps. Currently I am a Senior Product Designer at Linktree leading design for the Linktree
+        mobile app</p>
+    </div>
+    <div class=" pt-10 flex flex-wrap gap-3 md:mx-12 ">
+      <a class="careerLinks">UI DESIGN</a>
+      <a class="careerLinks">UX DESIGN</a>
+      <a class="careerLinks">PROTOTYPING</a>
+      <a class="careerLinks">BRANDING</a>
+      <a class="careerLinks">HTML/CSS</a>
+      <a class="careerLinks">WIREFRAMING</a>
+      <a class="careerLinks">INFORMATION ARCHITECTURE</a>
+      <a class="careerLinks">USER RESEARCH</a>
+      <a class="careerLinks">USER INTERVIEWS</a>
+      <a class="careerLinks">LEADERSHIP</a>
+      <a class="careerLinks">FIGMA</a>
+      <a class="careerLinks">ADOBE SUITE</a>
+    </div>
+  </div>
+  <div  id="review">
+
+  </div>
+
+  <div class="container  my-56 w-5/6 mx-auto">
+    <div>
+      <h1  class="text-5xl text-first">On Working With Me</h1>
+    </div>
+    <div class="pt-10 grid grid-cols-1 md:grid-cols-3 ">
+      <div class=" col-span-1 flex flex-col justify-center md:block text-center">
+        <img style="min-height: 150px; min-width: 150px; width: 150px;" class="rounded-full mx-auto"
+          src="https://uploads-ssl.webflow.com/5fa25266badbdb239c79ef86/6003bc8a500ee553547067e4_1560732160364-p-500.jpeg"
+          alt="">
+        <h1 class="text-2xl">Lana Kinney</h1>
+        <p style="color: grey;" class="text-lg">UX Researcher at AKQA</p>
+      </div>
+      <div class=" col-span-2">
+
+        <p class="text-3xl text-center md:text-left md:px-10 pt-4 md:pt-0">
+          "Sebastian is a guru at all things UX design, consistently producing intuitive, modern, and bold designs. He
+          is a natural problem solver in the design space so everyone went to him if they were stuck on a feature or
+          flow. <span class="hidden lg:block">He has a arsenal of design skills including animation and graphic design.
+            Not to mention, Seb was a design team lead, which means he managed a full team of both onshore and offshore
+            designs reviewing and providing feedback on all of their designs... Any business would be lucky to have
+            him."</span>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div id="contact" class="container mx-auto  mb-56 w-5/6 grid grid-cols-1 lg:grid-cols-2 border rounded-xl">
+    <div class=" xl:px-16 py-28 px-5">
+      <h1 class="text-7xl">Want to get in touch?</h1>
+    </div>
+    <div class=" py-24 xl:px-16 px-3">
+      <div>
+        <form action="#">
+          <div class="flex flex-wrap">
+            <div>
+              <label style="color: gray;" for="">Name</label><br>
+              <input class="p-4 rounded-lg border-first border-2 mr-5" type="text" name="" id="" placeholder="Enter your name">
+            </div>
+            <div>
+              <label style="color: gray;" for="">Email Address </label><br>
+              <input class="p-4 rounded-lg border-first border-2 mr-5" type="email" name="" id="" placeholder="Enter your email">
+            </div>
+          </div>
+          <div class="mt-5">
+            <label style="color: gray;" for="">Message</label><br>
+            <textarea class="p-4 rounded-lg border-first border-2 " name="" id="" cols="20" rows="5"></textarea>
+          </div>
+          <div class="mt-5">
+            <button style="color: white;" class="py-3 px-5 rounded-lg bg-first">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+ 
+
+
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>

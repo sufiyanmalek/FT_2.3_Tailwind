@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*{
+    scroll-behavior: smooth;
+}
+nav{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}
+
+.nav-links{
+    @apply mr-10 px-2 hover:text-first text-lg  hover:border-l-2 hover:border-r-2 hover:rounded-full;
+}
+.careerLinks{
+    @apply border px-4 py-2  h-fit rounded-xl border-first hover:bg-first hover:text-primary-50;
+}
+
+
+@media only screen and ( max-width: 1128px  ){
+    .contact{
+        display: none;
+    }
+}
+
