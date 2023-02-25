@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav
+    class=" container mx-auto relative flex w-full flex-nowrap items-center justify-between lg:flex-wrap lg:justify-start py-5"
+    data-te-navbar-ref>
+    <div class="flex flex-wrap w-full  items-center justify-between px-6">
+      <button
+        class="block border-0 bg-transparent py-2 px-2.5 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 lg:hidden"
+        type="button" data-te-collapse-init data-te-target="#navbarSupportedContent3"
+        aria-controls="navbarSupportedContent3" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="[&>svg]:w-7">
+          <svg class="w-7 h-7" fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+            transform="rotate(180)">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <g id="Menu_Fries">
+                <path
+                  d="M20.437,19.937c0.276,0 0.5,0.224 0.5,0.5c0,0.276 -0.224,0.5 -0.5,0.5l-16.874,0.002c-0.276,-0 -0.5,-0.224 -0.5,-0.5c-0,-0.276 0.224,-0.5 0.5,-0.5l16.874,-0.002Z">
+                </path>
+                <path
+                  d="M20.437,11.5c0.276,-0 0.5,0.224 0.5,0.5c0,0.276 -0.224,0.5 -0.5,0.5l-10,0.001c-0.276,-0 -0.5,-0.224 -0.5,-0.5c-0,-0.276 0.224,-0.5 0.5,-0.5l10,-0.001Z">
+                </path>
+                <path
+                  d="M20.437,3.062c0.276,-0 0.5,0.224 0.5,0.5c0,0.276 -0.224,0.5 -0.5,0.5l-16.874,0.001c-0.276,-0 -0.5,-0.224 -0.5,-0.5c-0,-0.276 0.224,-0.5 0.5,-0.5l16.874,-0.001Z">
+                </path>
+              </g>
+            </g>
+          </svg>
+        </span>
+      </button>
+      <a class="text-xl text-black" href="#"><img class="w-40 md:w-full" src="./public/transparentLogo.png" alt=""></a>
+      <div class="!visible hidden flex-grow basis-[100%] items-center justify-center  lg:!flex lg:basis-auto"
+        id="navbarSupportedContent3" data-te-collapse-item>
+        <!-- Left links -->
+        <ul class="list-style-none flex flex-col pl-0 gap-7 lg:flex-row text-base" data-te-navbar-nav-ref>
+          <li class="lg:px-2" data-te-nav-item-ref>
+            <a class="navLink" aria-current="page" href="#" data-te-nav-link-ref>HOME</a>
+          </li>
+          <li class="lg:pr-2" data-te-nav-item-ref>
+            <div class="flex group">
+              <div>
+                <div class="relative" data-te-dropdown-ref>
+                  <button class="flex items-center navLink  pr-5 transition duration-150 ease-in-out  " type="button"
+                    id="dropdownMenuButton1" data-te-dropdown-toggle-ref aria-expanded="false" data-te-ripple-init
+                    data-te-ripple-color="light">
+                    BLOG
+                    <span class="ml-2 w-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+                        <path fill-rule="evenodd"
+                          d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </span>
+                  </button>
+                  <ul style="border: 1px solid #d0d0a7;"
+                    class="absolute group-hover:block z-[1000] border px-4  float-left m-0 hidden min-w-max list-none overflow-hidden   bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block"
+                    aria-labelledby="dropdownMenuButton1" data-te-dropdown-menu-ref>
+                    <li>
+                      <a style="border-bottom: 1px solid #d0d0a7 ;"
+                        class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>1st Full Post + 2 cols Grid</a>
+                    </li>
+                    <li>
+                      <a style="border-bottom: 1px solid #d0d0a7 ;"
+                        class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>1st Full Post + List</a>
+                    </li>
+                    <li>
+                      <a style="border-bottom: 1px solid #d0d0a7 ;"
+                        class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>2 Cols Grid Layout</a>
+                    </li>
+                    <li>
+                      <a style="border-bottom: 1px solid #d0d0a7 ;"
+                        class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>List Layout</a>
+                    </li>
+                    <li>
+                      <a style="border-bottom: 1px solid #d0d0a7 ;"
+                        class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>3 Cols Grid Layout</a>
+                    </li>
+                    <li>
+                      <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>Standard Blog Layout</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="lg:pr-2" data-te-nav-item-ref>
+            <div class="flex group ">
+              <div>
+                <div class="relative" data-te-dropdown-ref>
+                  <button class="flex items-center navLink  pr-5 transition duration-150 ease-in-out  " type="button"
+                    id="dropdownMenuButton1" data-te-dropdown-toggle-ref aria-expanded="false" data-te-ripple-init
+                    data-te-ripple-color="light">
+                    FEATURES
+                    <span class="ml-2 w-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+                        <path fill-rule="evenodd"
+                          d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </span>
+                  </button>
+                  <ul style="border: 1px solid #d0d0a7;"
+                    class="absolute group-hover:block z-[1000] border px-4  float-left m-0 hidden min-w-max list-none overflow-hidden   bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block"
+                    aria-labelledby="dropdownMenuButton1" data-te-dropdown-menu-ref>
+                    <li>
+                      <a style="border-bottom: 1px solid #d0d0a7 ;"
+                        class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>Headers</a>
+                    </li>
+                    <li>
+                      <a style="border-bottom: 1px solid #d0d0a7 ;"
+                        class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>Sliders</a>
+                    </li>
+                    <li>
+                      <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>Sidebars</a>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="lg:pr-2" data-te-nav-item-ref>
+            <div class="flex group ">
+              <div>
+                <div class="relative" data-te-dropdown-ref>
+                  <button class="flex items-center navLink  pr-5 transition duration-150 ease-in-out  " type="button"
+                    id="dropdownMenuButton1" data-te-dropdown-toggle-ref aria-expanded="false" data-te-ripple-init
+                    data-te-ripple-color="light">
+                    CATEGORIES
+                    <span class="ml-2 w-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+                        <path fill-rule="evenodd"
+                          d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </span>
+                  </button>
+                  <ul style="border: 1px solid #d0d0a7;"
+                    class="absolute group-hover:block z-[1000] border px-4  float-left m-0 hidden min-w-max list-none overflow-hidden   bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block"
+                    aria-labelledby="dropdownMenuButton1" data-te-dropdown-menu-ref>
+                    <li>
+                      <a style="border-bottom: 1px solid #d0d0a7 ;"
+                        class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>Lifestyle</a>
+                    </li>
+                    <li>
+                      <a style="border-bottom: 1px solid #d0d0a7 ;"
+                        class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>Travel</a>
+                    </li>
+                    <li>
+                      <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>Photo</a>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="lg:pr-2" data-te-nav-link-ref>
+            <a href="#" class="navLink">ABOUT</a>
+          </li>
+          <li class="lg:pr-2" data-te-nav-link-ref>
+            <a href="#" class="navLink">CONTACT</a>
+          </li>
+          <li class="lg:pr-2" data-te-nav-item-ref>
+            <div class="flex group ">
+              <div>
+                <div class="relative" data-te-dropdown-ref>
+                  <button class="flex items-center navLink  pr-5 transition duration-150 ease-in-out  " type="button"
+                    id="dropdownMenuButton1" data-te-dropdown-toggle-ref aria-expanded="false" data-te-ripple-init
+                    data-te-ripple-color="light">
+                    SHOP
+                    <span class="ml-2 w-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+                        <path fill-rule="evenodd"
+                          d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </span>
+                  </button>
+                  <ul style="border: 1px solid #d0d0a7;"
+                    class="absolute group-hover:block z-[1000] border px-4  float-left m-0 hidden min-w-max list-none overflow-hidden   bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block"
+                    aria-labelledby="dropdownMenuButton1" data-te-dropdown-menu-ref>
+                    <li>
+                      <a style="border-bottom: 1px solid #d0d0a7 ;"
+                        class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>Cart</a>
+                    </li>
+                    <li>
+                      <a style="border-bottom: 1px solid #d0d0a7 ;"
+                        class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>Checkout</a>
+                    </li>
+                    <li>
+                      <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>My Account</a>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="lg:pr-2" data-te-nav-link-ref>
+            <a href="#" class="navLink">PORTFOLIO</a>
+          </li>
+
+        </ul>
+
+        <!-- Left links -->
+      </div>
+
+      <!-- Collapsible wrapper -->
+    </div>
+  </nav>
+
+
+  <!-- SECTION 1 -->
+  <div style="border-top: 2px solid #d0d0a7; background-color: #e7f2ed;" class="p-10">
+    <div class="hidden md:grid md:grid-cols-3 container  border-black   mx-auto justify-items-center">
+      <div class="md:pt-16">
+        <img style=" min-height: 405px;" src="./public/sec1/pic1.jpg" alt="">
+      </div>
+      <div>
+        <img style="min-height: 451px;" class=" hidden md:block" src="./public/sec1/pic1withtape.png" alt="" srcset="">
+        <img class="visible md:hidden" src="./public/sec1/pic2.jpg" alt="">
+      </div>
+      <div class="md:pt-16">
+        <img style=" min-height: 405px;" src="./public/sec1/pic3.png" alt="">
+      </div>
+    </div>
+    <div id="carouselExampleControls" class="relative md:hidden" data-te-carousel-init data-te-carousel-slide>
+      <div class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+        <div
+          class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          data-te-carousel-item data-te-carousel-active>
+          <img src="./public/sec1/pic1.jpg" class="block w-full" alt="Wild Landscape" />
+        </div>
+        <div
+          class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          data-te-carousel-item>
+          <img src="./public/sec1/pic2.jpg" class="block w-full" alt="Camera" />
+        </div>
+        <div
+          class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          data-te-carousel-item>
+          <img src="./public/sec1/pic3.png" class="block w-full" alt="Exotic Fruits" />
+        </div>
+      </div>
+      <button
+        class="absolute top-0 bottom-0 left-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+        type="button" data-te-target="#carouselExampleControls" data-te-slide="prev">
+        <span class="inline-block h-8 w-8">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="h-6 w-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+          </svg>
+        </span>
+        <span
+          class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Previous</span>
+      </button>
+      <button
+        class="absolute top-0 bottom-0 right-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+        type="button" data-te-target="#carouselExampleControls" data-te-slide="next">
+        <span class="inline-block h-8 w-8">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="h-6 w-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
+        </span>
+        <span
+          class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Next</span>
+      </button>
+    </div>
+    <div class="container mx-auto  border-black   ">
+      <div class="text-center pt-10 md:pt-0">
+        <p class="text-2xl italic">HEY THERE </p>
+        <h1 class="text-7xl">I'm Haus</h1>
+      </div>
+      <div class="text-center text-xl py-10 md:px-24">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet velit eum neque, illo mollitia, molestiae
+          cupiditate quae libero amet, magni fugiat maiores porro ullam. Distinctio libero impedit cumque fugit dolores
+          quae, similique quod molestiae vel architecto, explicabo, consectetur aut sint inventore praesentium dolorem
+          facere delectus odit fuga labore rerum sed magnam doloremque commodi. </p>
+      </div>
+    </div>
+    <div class="container  border-black mx-auto ">
+      <p style="border: 2px solid #d0d0a7;"
+        class="text-xl hover:bg-primary-border hover:text-white  w-fit py-2 px-3 mx-auto italic">READ THE WHOLE STORY
+      </p>
+    </div>
+  </div>
+  <div class="border bg-[#f2f2e6]">
+    <div class="container mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-3">
+        <div class="row-span-2 md:border-r border-sec flex justify-center py-10">
+          <img src="./public/sec2/sec2.png" alt="image" />
+        </div>
+        <div class="col-span-2 md:py-10 md:px-10">
+          <p class="font-playfair text-2xl md:text-4xl tracking-widest text-font_color">
+            Condimentum Magna Vel Sodales Mollis Nisl Nibh Ornare Eros
+          </p>
+          <hr class="border-[#47a1ac] my-5 border-2 w-28" />
+          <p class="text-[rgb(148,148,141)] font-playfair tracking-widest md:text-xl">
+            Nunc condimentum, magna vel sodales mollis, nisl nibh ornare eros, vel malesuada nunc metus. Aenean vitae
+            arcu auctor,
+            imperdiet nisl quis interdum lacus.
+          </p>
+        </div>
+        <div class="mt-9 md:py-10 md:px-10">
+          <a href="#get_start"
+            class="border border-sec lg:text-2xl font-playfair italic text-[#0a2d32] py-2 px-2 lg:px-4 tracking-widest hover:bg-primary-border hover:text-white">GET
+            STARTED</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="container border border-black mx-auto md:p-16">
+      <div class="grid md:grid-cols-3 justify-items-center">
+        <div class="hidden md:block ">
+          <div style="background-color: black;" class="relative mb-28 group">
+            <img class="imgHover" src="./public/sec3/sec3pic1.png" alt="">
+            <h1 class="group-hover:px-44 center bg-white ">ARCHITECTURE</h1>
+          </div>
+          <div style="background-color: black;" class="relative group">
+            <img class="imgHover" src="./public/sec3/sec3pic2.png" alt="">
+            <h1 class="group-hover:px-52 center bg-white ">Interior</h1>
+          </div>
+        </div>
+        <div class="my-auto text-center">
+          <p class="md:text-xl lg:text-2xl italic">THE PORTFOLIO</p>
+          <h1 class="md:text-4xl lg:text-5xl xl:text-7xl py-5">VIEW RECENT WORK</h1>
+          <p class="hidden md:block md:text-xl lg:text-2xl py-2  px-4 border border-black w-fit mx-auto hover:bg-black hover:text-white">EXPLORE</p>
+        </div>
+        <div class="hidden md:block">
+          <div style="background-color: black;" class="mb-28 relative group" >
+            <img class="imgHover" src="./public/sec3/sec3pic3.png" alt="">
+            <h1 class="group-hover:px-44 center bg-white">PHOTOGRAPHY</h1>
+          </div>
+          <div style="background-color: black;" class="relative group">
+            <img class="imgHover" src="./public/sec3/sec3pic4.png" alt="">
+            <h1 class="group-hover:px-52 center bg-white">Animal</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
+
+
+
+<!-- 
+<div style="background-color: #f2f2e6;">
+  <div class="container  border-black mb-32 mx-auto md:px-16">
+    <div class="flex flex-wrap justify-center lg:flex-nowrap">
+      <div class="  lg:border-r-2 border-primary-border md:p-10">
+        <img style="min-width: 338px; min-height: 405px;" src="./public/sec2/sec2.png" alt="">
+      </div>
+      <div class="container  border-black md:p-10">
+        <h1 class="md:text-5xl">Condimentum Magna Vel Sodales Mollis Nisl Nibh Ornare Eros</h1>
+        <p style="border: 2px solid #16899b ; width: 15%;" class="mt-3"></p>
+        <p style="color: #878786;" class="md:py-10 md:text-3xl">Nunc condimentum, magna vel sodales mollis, nisl nibh ornare eros, vel malesuada nunc metus. Aenean vitae arcu auctor, imperdiet nisl quis interdum lacus.</p>
+        <p style="border: 2px solid #d0d0a7;" class="text-xl hover:bg-primary-border hover:text-white  w-fit py-2 px-3  italic">GET STARTED</p>
+      </div>
+      
+    </div>
+  </div>
+</div> -->
